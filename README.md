@@ -1,2 +1,2 @@
-# portfolio
-Site of my projects
+# Portfolio
+Site for my projects
