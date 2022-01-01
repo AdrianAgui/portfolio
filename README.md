@@ -1,2 +1,7 @@
-# Portfolio
-Site for my projects
+# AdrianAgui Portfolio Project
+
+## Description
+Site for my projects.
+
+## Technologies
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
