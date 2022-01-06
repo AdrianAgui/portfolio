@@ -23,6 +23,7 @@ function createTranslateLoader(http: HttpClient) {
         deps: [HttpClient]
       }
     })
-  ]
+  ],
+  exports: [TranslateModule]
 })
 export class SharedModule {}
