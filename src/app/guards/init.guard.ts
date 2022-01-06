@@ -10,8 +10,8 @@ export class InitGuard implements CanActivate {
   constructor(private readonly translate: TranslateService) {}
 
   canActivate(): Observable<boolean> {
-    this.translate.setDefaultLang('es');
-    this.translate.use('es');
+    this.translate.setDefaultLang('en');
+    this.translate.use('en');
 
     return of(true);
   }

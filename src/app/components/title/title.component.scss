@@ -1,0 +1,25 @@
+.typewriter {}
+
+h1 {
+  display: block;
+  width: 50px;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 36ch;
+
+  animation: typing 2s steps(36), blink .5s infinite step-end alternate;
+  overflow: hidden;
+
+  span {
+    font-size: 38px;
+  }
+}
+
+@keyframes typing {
+  from { width: 0 }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
