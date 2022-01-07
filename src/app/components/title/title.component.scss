@@ -2,13 +2,12 @@
 
 h1 {
   display: block;
-  width: 50px;
-  font-family: monospace;
   white-space: nowrap;
+  font-family: NunitoSans;
   border-right: 4px solid;
-  width: 36ch;
+  width: 28ch;
 
-  animation: typing 2s steps(36), blink .5s infinite step-end alternate;
+  animation: typing 2s steps(28), blink .5s infinite step-end alternate;
   overflow: hidden;
 
   span {
