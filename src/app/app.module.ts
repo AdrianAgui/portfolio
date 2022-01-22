@@ -6,17 +6,10 @@ import { AppComponent } from './app.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { PagesModule } from './pages/pages.module';
-import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    SharedModule,
-    PagesModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, PagesModule],
   exports: [],
   bootstrap: [AppComponent]
 })
