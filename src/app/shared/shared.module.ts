@@ -3,8 +3,11 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { ComponentsModule } from './../components/components.module';
+
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 const LABELS_PATH = './assets/i18n/';
 
@@ -13,7 +16,7 @@ function createTranslateLoader(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [HeaderComponent],
+  declarations: [HeaderComponent, FooterComponent],
   imports: [
     CommonModule,
     TranslateModule.forRoot({
@@ -25,6 +28,6 @@ function createTranslateLoader(http: HttpClient) {
       }
     })
   ],
-  exports: [TranslateModule, HeaderComponent]
+  exports: [TranslateModule, HeaderComponent, FooterComponent]
 })
 export class SharedModule {}

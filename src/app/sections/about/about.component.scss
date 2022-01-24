@@ -1,0 +1,8 @@
+.about {
+  position: relative;
+  min-height: 100vh;
+  
+  svg > path {
+    fill: var(--bg-color);
+  }
+}

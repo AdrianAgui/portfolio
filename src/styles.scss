@@ -1,5 +1,21 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
 html body {
   margin: 0;
   height: 100%;
-  font-family: monospace;
+  font-family: 'Poiret One', 'Lucida Sans', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+
+  &-reverse {
+    transform: scale(-1, 1);
+  }
 }

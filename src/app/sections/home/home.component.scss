@@ -1,0 +1,35 @@
+.home {
+  position: relative;
+  min-height: 90vh;
+  
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  .content {
+    height: 750px;
+    display: flex;
+    justify-content: space-around;
+
+    .col1, .col2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .col1 {
+
+    }
+
+    .col2 {
+      margin-bottom: 150px;
+
+      .face {
+        width: 250px;
+        height: 250px;
+
+        border-radius: 50%;
+        box-shadow: rgb(0 0 0 / 56%) 0px 22px 70px 4px;
+      }
+    }
+  }
+}
