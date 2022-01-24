@@ -1,4 +1,4 @@
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -10,6 +10,14 @@ import { Themes } from './theme/symbols';
 import { AppRoutingModule } from './app-routing.module';
 import { ThemeModule } from './theme/theme.module';
 import { PagesModule } from './pages/pages.module';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+const LABELS_PATH = './assets/i18n/';
+
+function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, LABELS_PATH, '.json');
+}
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,9 +25,17 @@ import { PagesModule } from './pages/pages.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    TranslateModule.forRoot({
+      defaultLanguage: 'en',
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [HttpClient]
+      }
+    }),
     ThemeModule.forRoot({
       themes: [lightTheme, darkTheme],
-      active: Themes.LIGHT
+      active: Themes.DARK
     }),
     PagesModule
   ],

@@ -7,22 +7,28 @@ import { AboutComponent } from './about/about.component';
 import { ComponentsModule } from './../components/components.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { ContactComponent } from './contact/contact.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
+    HeaderComponent,
+    HomeComponent,
     AboutComponent,
     SkillsComponent,
-    HomeComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [CommonModule, TranslateModule, ComponentsModule],
   exports: [
+    HeaderComponent,
+    HomeComponent,
     AboutComponent,
     SkillsComponent,
-    HomeComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ]
 })
 export class SectionsModule {}
