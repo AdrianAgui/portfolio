@@ -9,21 +9,9 @@ import { ThemeService } from './../../theme/theme.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  constructor(
-    private readonly translator: TranslateService,
-    private readonly themeService: ThemeService
-  ) {}
+  constructor(private readonly translator: TranslateService) {}
 
   lang(lang: string) {
     this.translator.use(lang);
-  }
-
-  toggle() {
-    const active = this.themeService.getActiveTheme();
-    if (active.name === Themes.LIGHT) {
-      this.themeService.setTheme(Themes.DARK);
-    } else {
-      this.themeService.setTheme(Themes.LIGHT);
-    }
   }
 }

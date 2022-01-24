@@ -35,7 +35,7 @@ function createTranslateLoader(http: HttpClient) {
     }),
     ThemeModule.forRoot({
       themes: [lightTheme, darkTheme],
-      active: Themes.DARK
+      active: Themes.LIGHT
     }),
     PagesModule
   ],
