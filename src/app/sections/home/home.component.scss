@@ -7,28 +7,30 @@
 
   .content {
     height: 750px;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 
     .col1, .col2 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
     }
 
     .col1 {
-
+      text-align: end;
     }
 
     .col2 {
       margin-bottom: 150px;
 
       .face {
-        width: 250px;
-        height: 250px;
+        width: 450px;
+        height: 420px;
 
         border-radius: 50%;
-        box-shadow: rgb(0 0 0 / 56%) 0px 22px 70px 4px;
+        box-shadow: rgb(97 173 100 / 56%) 0px 22px 70px 4px;
       }
     }
   }
