@@ -20,7 +20,6 @@ export class ThemeService {
 
   setTheme(name: string) {
     this.theme = name;
-    console.log(this.getActiveTheme());
     this.themeChange.emit(this.getActiveTheme());
   }
 }

@@ -2,11 +2,13 @@
   <div class="content">
     <div class="col1">
       <app-title></app-title>
-      <div>{{ 'helloWorld' | translate }}</div>
     </div>
 
     <div class="col2">
+      <div class="img-blur"></div>
       <img src="assets/img/face.jpg" class="face">
+      <img *ngIf="currentTheme === 'light'" src="assets/img/circuit_black.png" class="circuit">
+      <img *ngIf="currentTheme === 'dark'" src="assets/img/circuit_white.png" class="circuit">
     </div>
   </div>
 

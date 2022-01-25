@@ -1,4 +1,8 @@
 {
   "helloWorld": "hola mundo",
-  "helloName": "hola {{name}}"
+  "helloName": "hola {{name}}",
+  "languages": {
+    "en": "Inglés",
+    "es": "Español"
+  }
 }
