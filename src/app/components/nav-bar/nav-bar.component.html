@@ -1,9 +1,9 @@
-<nav class="stroke">
+<nav>
   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#about">About me</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#contact">Contact me</a></li>
+    <li [class.active] = "!section"><a href="#" >Home</a></li>
+    <li [class.active] = "section === 'about'"><a href="#about" >About me</a></li>
+    <li [class.active] = "section === 'projects'"><a href="#projects">Projects</a></li>
+    <li [class.active] = "section === 'skills'"><a href="#skills">Skills</a></li>
+    <li [class.active] = "section === 'contact'"><a href="#contact">Contact me</a></li>
   </ul>
 </nav>
