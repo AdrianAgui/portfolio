@@ -1,0 +1,63 @@
+.home {
+  position: relative;
+  min-height: 90vh;
+
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  .content {
+    height: 750px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+    .col1 {
+      text-align: end;
+    }
+
+    .col2 {
+      position: relative;
+      margin-bottom: 150px;
+
+      .face {
+        width: 400px;
+        height: 370px;
+        border-radius: 50%;
+        
+        position: absolute;
+        top: 120px;
+        left: 100px;
+        z-index: 3;
+      }
+
+      .img-blur {
+        display: block;
+        width: 450px;
+        height: 420px;
+        border-radius: 50%;
+        background: lightgray;
+
+        position: absolute;
+        top: 100px;
+        left: 75px;
+        z-index: 2;
+
+        -webkit-filter: blur(20px);
+        -moz-filter: blur(20px);
+        -o-filter: blur(20px);
+        -ms-filter: blur(20px);
+        filter: blur(20px);
+      }
+
+      .circuit {
+        width: 600px;
+        height: 600px;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+    }
+  }
+}

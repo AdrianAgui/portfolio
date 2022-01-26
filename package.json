@@ -1,14 +1,20 @@
 {
   "name": "portfolio",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "author": {
+    "name": "Adrián Aguirre",
+    "email": "adrian.agui9@gmail.com",
+    "url": "https://adrianagui.vercel.app/"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "eslint src/**/*.{js,ts}",
-    "lint:fix": "eslint src/**/*.{js,ts} --quiet --fix"
+    "lint:fix": "eslint src/**/*.{js,ts} --fix"
   },
   "dependencies": {
     "@angular/animations": "~13.1.0",
@@ -19,8 +25,13 @@
     "@angular/platform-browser": "~13.1.0",
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",
+    "@fortawesome/angular-fontawesome": "^0.10.1",
+    "@fortawesome/fontawesome-svg-core": "~1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@ngx-translate/core": "^14.0.0",
+    "@ngx-translate/http-loader": "^7.0.0",
     "rxjs": "~7.4.0",
-    "tslib": "^2.3.0",
+    "tslib": "^2.3.1",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {

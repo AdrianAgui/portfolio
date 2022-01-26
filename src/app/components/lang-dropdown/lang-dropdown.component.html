@@ -1,0 +1,21 @@
+<div class="nav-wrapper">
+  <div class="sl-nav">
+    <ul>
+      <li>
+        <b>{{ 'languages.' + currentLang | translate }}&nbsp;</b>
+        <fa-icon [icon]="faAngleDown"></fa-icon>
+        <div class="triangle"></div>
+        <ul>
+          <li (click)="lang('en')">
+            <i class="sl-flag flag-en"><div id="en"></div></i>
+            <span [class.active]="currentLang === 'en'" >{{ 'languages.en' | translate }}</span>
+          </li>
+          <li (click)="lang('es')">
+            <i class="sl-flag flag-es"><div id="es"></div></i>
+            <span [class.active]="currentLang === 'es'">{{ 'languages.es' | translate }}</span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
