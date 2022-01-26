@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   min-height: 10vh;
   position: sticky;
   top: 0;
@@ -11,17 +11,20 @@
   padding: 0 3rem;
   background-color: var(--bg-color);
   color: var(--text-color);
-  
+
   .logo {
     font-size: 64px;
     font-family: 'Gochi Hand', cursive;
     font-weight: 300;
     transform: rotate(-10deg);
 
-    a { color: inherit; } 
+    a {
+      color: inherit;
+    }
   }
 
-  .menu {
+  .menu {   
+    
   }
 
   .options {

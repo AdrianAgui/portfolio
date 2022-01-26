@@ -1,5 +1,5 @@
 import { Injectable, Inject, EventEmitter } from '@angular/core';
-import { THEMES, ACTIVE_THEME, Theme } from './symbols';
+import { THEMES, ACTIVE_THEME, Theme, Themes } from './symbols';
 
 @Injectable()
 export class ThemeService {
@@ -8,7 +8,12 @@ export class ThemeService {
   constructor(
     @Inject(THEMES) public themes: Theme[],
     @Inject(ACTIVE_THEME) public theme: string
-  ) {}
+  ) {
+    const hour = new Date().getHours();
+    hour > 6 && hour < 18
+      ? this.setTheme(Themes.LIGHT)
+      : this.setTheme(Themes.DARK);
+  }
 
   getActiveTheme() {
     const theme = this.themes.find((t) => t.name === this.theme);
