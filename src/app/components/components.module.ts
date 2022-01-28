@@ -6,20 +6,23 @@ import { LangDropdownComponent } from './lang-dropdown/lang-dropdown.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TranslateModule } from '@ngx-translate/core';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { NavBarMobileComponent } from './nav-bar-mobile/nav-bar-mobile.component';
 
 @NgModule({
   declarations: [
     TitleComponent,
     DayNightToggleComponent,
     LangDropdownComponent,
-    NavBarComponent
+    NavBarComponent,
+    NavBarMobileComponent
   ],
   imports: [CommonModule, FontAwesomeModule, TranslateModule],
   exports: [
     TitleComponent,
     DayNightToggleComponent,
     LangDropdownComponent,
-    NavBarComponent
+    NavBarComponent,
+    NavBarMobileComponent
   ]
 })
 export class ComponentsModule {}
