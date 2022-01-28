@@ -31,9 +31,13 @@ nav {
         width: 0%;
         content: '.';
         color: transparent;
-        background: var(--text-color);
+        background: var(--primary-color);
         height: 2px;
         transition: all 0.5s;
+      }
+
+      &:hover {
+        color: var(--primary-color);
       }
 
       &:hover:after {

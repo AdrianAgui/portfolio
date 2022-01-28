@@ -1,6 +1,13 @@
 {
   "helloWorld": "hola mundo",
   "helloName": "hola {{name}}",
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "skills": "Aptitudes",
+    "contact": "Contáctame"
+  },
   "languages": {
     "en": "Inglés",
     "es": "Español"
