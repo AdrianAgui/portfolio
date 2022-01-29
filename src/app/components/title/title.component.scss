@@ -1,11 +1,41 @@
 .title {
-  font-size: 54px;
+  width: 575px;
+  font-size: 58px;
+  font-family: monospace;
+
+  @media (max-width: 900px) {
+    width: 100%;
+    font-size: 32px;
+  }
 
   .letter {
-    font-size: 84px;
+    font-size: 100px;
+    color: var(--primary-color);
+    @media (max-width: 900px) {
+      font-size: 48px;
+    }
   }
 }
 
-.subtitle {
-  font-size: 42px;
+.type {
+  font-family: monospace;
+  color: #0000;
+  background: linear-gradient(-90deg, var(--primary-color) 5px, #0000 0) 10px 0,
+    linear-gradient(var(--text-color) 0 0) 0 0;
+  background-size: calc(var(--n) * 1ch) 200%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  animation: b 0.7s infinite steps(1),
+    t calc(var(--n) * 0.1s) steps(var(--n)) forwards;
+}
+@keyframes t {
+  from {
+    background-size: 0 200%;
+  }
+}
+@keyframes b {
+  50% {
+    background-position: 0 -100%, 0 0;
+  }
 }

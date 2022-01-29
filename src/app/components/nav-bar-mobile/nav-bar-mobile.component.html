@@ -1,0 +1,23 @@
+<div class="burger">
+  <label for="check">
+    <input type="checkbox" id="check" (click)="toggleNav()" />
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+</div>
+
+<div id="sidenav" class="sidenav">
+  <div class="menu-items">
+    <a href="#" (click)="closeNav()">{{ 'navbar.home' | translate }}</a>
+    <a href="#about" (click)="closeNav()">{{ 'navbar.about' | translate }}</a>
+    <a href="#projects" (click)="closeNav()">{{ 'navbar.projects' | translate }}</a>
+    <a href="#skills" (click)="closeNav()">{{ 'navbar.skills' | translate }}</a>
+    <a href="#contact" (click)="closeNav()">{{ 'navbar.contact' | translate }}</a>
+  </div>
+
+  <div class="options">
+    <app-lang-dropdown></app-lang-dropdown>
+    <app-day-night-toggle></app-day-night-toggle>
+  </div>
+</div>
