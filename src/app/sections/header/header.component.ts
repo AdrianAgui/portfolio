@@ -9,7 +9,7 @@ export class HeaderComponent implements OnInit {
   isMobile = false;
 
   ngOnInit(): void {
-    if (!window.matchMedia('(min-width: 900px)').matches) {
+    if (window.matchMedia('(max-width: 900px)').matches) {
       this.isMobile = true;
     }
   }

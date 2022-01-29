@@ -1,7 +1,15 @@
 .projects {
   position: relative;
-  min-height: 85vh;
-  
+  min-height: 80vh;
+
   background-color: var(--bg-color);
   color: var(--text-color);
+
+  .title {
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 64px;
+    font-family: 'Supermercado One', 'Franklin Gothic Medium', 'Arial Narrow',
+      Arial, sans-serif;
+  }
 }

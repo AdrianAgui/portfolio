@@ -6,10 +6,22 @@
     "about": "About me",
     "projects": "Projects",
     "skills": "Skills",
-    "contact": "Contact me"
+    "contact": "Contact"
   },
   "languages": {
     "en": "English",
     "es": "Spanish"
+  },
+  "about": {
+    "title": "About me"
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "contact": {
+    "title": "Contact me"
   }
 }
