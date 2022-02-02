@@ -13,7 +13,19 @@
     "es": "Spanish"
   },
   "about": {
-    "title": "About me"
+    "title": "About me",
+    "whoami": {
+      "title": "Who am I?",
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    },
+    "work": {
+      "title": "Work Experience",
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    },
+    "studies": {
+      "title": "Studies",
+      "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    }
   },
   "projects": {
     "title": "Projects"
@@ -22,6 +34,6 @@
     "title": "Skills"
   },
   "contact": {
-    "title": "Contact me"
+    "title": "Get in touch!"
   }
 }

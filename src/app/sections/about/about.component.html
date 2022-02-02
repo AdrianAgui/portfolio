@@ -1,9 +1,42 @@
 <section class="about">
   <span id="about" class="navigator"></span>
-  
-  <div class="title">{{ 'about.title' | translate }}</div>
 
-  <svg class="wave wave-reverse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <div class="section-title">{{ 'about.title' | translate }}</div>
+
+  <div class="content">
+    <article class="content__whoiam">
+      <div class="subtitle">{{ 'about.whoami.title' | translate }}</div>
+      <div class="text" [innerHTML]="'about.whoami.text' | translate"></div>
+      <img
+        loading="lazy"
+        src="assets/img/whoami.png"
+      />
+    </article>
+
+    <article class="content__work">
+      <div class="subtitle">{{ 'about.work.title' | translate }}</div>
+      <div class="text" [innerHTML]="'about.work.text' | translate"></div>
+      <img
+        loading="lazy"
+        src="assets/img/work.png"
+      />
+    </article>
+
+    <article class="content__studies">
+      <div class="subtitle">{{ 'about.studies.title' | translate }}</div>
+      <div class="text" [innerHTML]="'about.studies.text' | translate"></div>
+      <img
+        loading="lazy"
+        src="assets/img/studies.png"
+      />
+    </article>
+  </div>
+
+  <svg
+    class="wave wave-reverse"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1440 320"
+  >
     <path
       fill="#ffffff"
       fill-opacity="1"
