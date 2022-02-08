@@ -28,7 +28,15 @@
     }
   },
   "projects": {
-    "title": "Proyectos"
+    "title": "Proyectos",
+    "dummycoin": {
+      "title": "Dummycoin",
+      "info": "Proyecto basado en tecnología blockchain el cual simula la arquitectura de Bitcoin, es una red totalmente funcional con características como minar bloques, crear transacciones y generar billeteras, consta de una parte frontend y otra backend."
+    },
+    "postsboard": {
+      "title": "Posts Board",
+      "info": "Proyecto frontend simple que implementa funcionalidades como visualizar, crear, editar y buscar posts en un tablón responsive."
+    }
   },
   "skills": {
     "title": "Aptitudes"
