@@ -1,11 +1,6 @@
 .about {
   position: relative;
-  min-height: 100vh;
-
-  @media (max-width: 1100px) {
-    min-height: 225vh;
-  }
-
+  padding-bottom: 200px;
   .content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
