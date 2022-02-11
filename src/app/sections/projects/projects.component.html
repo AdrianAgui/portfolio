@@ -5,9 +5,49 @@
 
   <div class="projects-grid">
     <div class="container">
-      <img loading="lazy" src="assets/img/dummycoin.png" />
-      <div class="info info-margin-left">
-        <div class="info__title" translate>{{ 'projects.dummycoin.title' | translate }}</div>
+      <div class="block-img">
+        <a href="https://dummycoin.vercel.app" target="_blank">
+          <img loading="lazy" src="assets/img/dummycoin.png" />
+        </a>
+        <div class="buttons">
+          <a
+            *ngIf="!isMobile"
+            href="https://dummycoin.vercel.app"
+            target="_blank"
+          >
+            <button>
+              <span>Visit</span>&nbsp;
+              <fa-icon [icon]="faLink"></fa-icon>
+            </button>
+          </a>
+
+          <div class="buttons__code">
+            <a
+              href="https://github.com/AdrianAgui/dummycoin-frontend"
+              target="_blank"
+            >
+              <button>
+                <span>Frontend</span>&nbsp;
+                <fa-icon [icon]="faCode"></fa-icon>
+              </button>
+            </a>
+            <a
+              href="https://github.com/AdrianAgui/dummycoin-backend"
+              target="_blank"
+            >
+              <button>
+                <span>Backend</span>&nbsp;
+                <fa-icon [icon]="faCode"></fa-icon>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="info info-margin info-margin-left">
+        <div class="info__title" translate>
+          {{ 'projects.dummycoin.title' | translate }}
+        </div>
         <p class="info__text" translate>
           {{ 'projects.dummycoin.info' | translate }}
         </p>
@@ -16,14 +56,41 @@
 
     <hr />
 
-    <div class="container">
-      <div class="info info-margin-right">
-        <div class="info__title" translate>{{ 'projects.postsboard.title' | translate }}</div>
+    <div class="container container-reverse">
+      <div class="info info-margin info-margin-right">
+        <div class="info__title" translate>
+          {{ 'projects.postsboard.title' | translate }}
+        </div>
         <p class="info__text" translate>
           {{ 'projects.postsboard.info' | translate }}
         </p>
       </div>
-      <img loading="lazy" src="assets/img/posts-board.png" />
+
+      <div class="block-img">
+        <a href="https://adrianagui.github.io/posts-board" target="_blank">
+          <img loading="lazy" src="assets/img/posts-board.png" />
+        </a>
+        <div class="buttons buttons-justify-end">
+          <a
+            *ngIf="!isMobile"
+            href="https://adrianagui.github.io/posts-board"
+            target="_blank"
+          >
+            <button>
+              <span>Visit</span>&nbsp;
+              <fa-icon [icon]="faLink"></fa-icon>
+            </button>
+          </a>
+          <div class="buttons__code">
+            <a href="https://github.com/AdrianAgui/posts-board" target="_blank">
+              <button>
+                <span>Code</span>&nbsp;
+                <fa-icon [icon]="faCode"></fa-icon>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <hr />
