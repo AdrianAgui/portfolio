@@ -6,10 +6,42 @@
     "about": "About me",
     "projects": "Projects",
     "skills": "Skills",
-    "contact": "Contact me"
+    "contact": "Contact"
   },
   "languages": {
     "en": "English",
     "es": "Spanish"
+  },
+  "about": {
+    "title": "About me",
+    "whoami": {
+      "title": "Who am I?",
+      "text": "Hello! My name is Adrián, but you can call me Adri, I am 29 years old and I am passionate about technology, video games and investigate deeply the topics that interest me.<br><br>I consider myself a very curious person who enjoys continuous learning and always likes to be updated on new technologies, especially in the world of web development."
+    },
+    "work": {
+      "title": "Work Experience",
+      "text": "I have currently been working for 6 years at <b>Aktios Digital Services</b>, a technology consultancy with the position of <b>Senior frontend developer</b>. I have participated in several projects, among the most important an Ecommerce platform for clients such as Consum, Sorli, UVESCO, among others. I have also participated in web projects and mobile applications for automotive clients such as Audi, Volkswagen and Suzuki. <br><br> Previously, I worked for 1 year at <b>Sener</b>, an engineering company, on an internal web project on the management and calculations of train catenaries."
+    },
+    "studies": {
+      "title": "Studies",
+      "text": "Degree in <b>Computer Engineering</b> at the <b>Autonomous University of Barcelona</b> from 2012 to 2016<br><br> Certificate of Higher Education (HNC) on <b>Administration of Computer Network Systems (ASIX)</b> at IES Sabadell from 2010 to 2012."
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "dummycoin": {
+      "title": "Dummycoin",
+      "info": "Project based on blockchain technology which simulates the architecture of Bitcoin, it is a fully functional network with features such as mining blocks, creating transactions and generating wallets, it consists of a frontend part and a backend part."
+    },
+    "postsboard": {
+      "title": "Posts Board",
+      "info": "Simple frontend project that implements functionalities like viewing, creating, editing and searching posts in a responsive board."
+    }
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "contact": {
+    "title": "Get in touch!"
   }
 }

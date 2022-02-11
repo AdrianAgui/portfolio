@@ -11,5 +11,37 @@
   "languages": {
     "en": "Inglés",
     "es": "Español"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "whoami": {
+      "title": "¿Quién soy?",
+      "text": "¡Hola! Me llamo Adrián, pero puedes llamarme Adri, tengo 29 años y me apasiona la tecnología, los videojuegos e investigar profundamente los temas que me interesan.<br><br>Me considero una persona muy curiosa la cual disfruta del aprendizaje continuo y siempre me gusta estar actualizado sobre nuevas tecnologías, sobre todo en el mundo del desarrollo web."
+    },
+    "work": {
+      "title": "Experiencia laboral",
+      "text": "Actualmente llevo 6 años trabajando en <b>Aktios Digital Services</b>, una consultoría tecnológica con el cargo de <b>desarrollador frontend Senior</b>. He participado en varios proyectos, entre los más importantes una plataforma Ecommerce para clientes como Consum, Sorli, UVESCO, entre otros. También he participado en proyectos web y aplicaciones móviles para clientes automovilísticos como Audi, Volkswagen y Suzuki. <br><br> Anteriormente trabajé 1 año en <b>Sener</b> una empresa de ingeniería en un proyecto web interno sobre la gestión y cálculos sobre catenarias de trenes."
+    },
+    "studies": {
+      "title": "Estudios",
+      "text": "Grado en <b>Ingeniería Informática</b> en la <b>Universidad Autónoma de Barcelona</b> del año 2012 al 2016<br><br> Ciclo formativo de grado superior (CFGS) sobre <b>Administración de Sistemas Informáticos en Red (ASIX)</b> en IES Sabadell del año 2010 al 2012."
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "dummycoin": {
+      "title": "Dummycoin",
+      "info": "Proyecto basado en tecnología blockchain el cual simula la arquitectura de Bitcoin, es una red totalmente funcional con características como minar bloques, crear transacciones y generar billeteras, consta de una parte frontend y otra backend."
+    },
+    "postsboard": {
+      "title": "Posts Board",
+      "info": "Proyecto frontend simple que implementa funcionalidades como visualizar, crear, editar y buscar posts en un tablón responsive."
+    }
+  },
+  "skills": {
+    "title": "Aptitudes"
+  },
+  "contact": {
+    "title": "Contáctame!"
   }
 }

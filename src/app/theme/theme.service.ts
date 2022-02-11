@@ -10,7 +10,7 @@ export class ThemeService {
     @Inject(ACTIVE_THEME) public theme: string
   ) {
     const hour = new Date().getHours();
-    hour > 6 && hour < 18
+    hour > 6 && hour < 20
       ? this.setTheme(Themes.LIGHT)
       : this.setTheme(Themes.DARK);
   }

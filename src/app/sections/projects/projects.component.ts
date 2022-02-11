@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faLink, faCode } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-projects',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
+  faLink = faLink;
+  faCode = faCode;
 
-  constructor() { }
+  isMobile = false;
 
   ngOnInit(): void {
+    if (window.matchMedia('(max-width: 900px)').matches) {
+      this.isMobile = true;
+    }
   }
-
 }
