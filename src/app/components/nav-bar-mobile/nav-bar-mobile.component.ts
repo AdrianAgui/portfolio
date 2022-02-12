@@ -14,11 +14,13 @@ export class NavBarMobileComponent {
       ? '0'
       : '100%';
     this.isNavOpen = !this.isNavOpen;
+    document.body.style.position = this.isNavOpen ? 'fixed' : 'unset';
   }
 
   closeNav() {
     document.getElementById('sidenav')!.style.width = '0';
     (document.getElementById('check') as HTMLInputElement).checked = false;
+    document.body.style.position = 'unset';
     this.isNavOpen = false;
   }
 }
