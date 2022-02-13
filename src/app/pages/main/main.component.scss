@@ -1,15 +1,15 @@
-.arrow {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 9;
-  padding: 12px 14px;
-  margin: 32px;
-  font-size: 18px;
-  border-radius: 10%;
-  background: black;
+.link-top {
+  color: var(--primary-color);
 
-  a {
-    color: var(--primary-color);
+  .arrow {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9;
+    padding: 12px 14px;
+    margin: 32px;
+    font-size: 18px;
+    border-radius: 10%;
+    background: black;
   }
 }

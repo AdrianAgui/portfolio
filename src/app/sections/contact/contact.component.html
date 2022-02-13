@@ -3,25 +3,41 @@
 
   <div class="section-title">{{ 'contact.title' | translate }}</div>
 
+  <div class="socials-container">
+    <div class="socials">
+      <a class="circle-link" title="Github" href="https://github.com/AdrianAgui" target="_blank" rel="noopener">
+        <span class="circle-icon">
+          <fa-icon [icon]="faGithub"></fa-icon>
+        </span>
+      </a>
+
+      <a class="circle-link" title="Linkedin" href="https://www.linkedin.com/in/adrian-aguirre-sanchez/" target="_blank" rel="noopener">
+        <span class="circle-icon">
+          <fa-icon [icon]="faLinkedin"></fa-icon>
+        </span>
+      </a>
+    </div>
+  </div>
+
   <div class="contact-container">
     <div class="card">
       <form action="https://formsubmit.co/adrianagui9@gmail.com" method="POST">
         <div class="form__row">
           <div class="form__group field">
             <input type="input" class="form__field" placeholder="Name" name="name" id="name" required />
-            <label for="name" class="form__label">Name</label>
+            <label for="name" class="form__label">{{ 'contact.name' | translate }}</label>
           </div>
 
           <div class="form__group field">
             <input type="input" class="form__field" placeholder="Email" name="email" id="email" required />
-            <label for="email" class="form__label">Email</label>
+            <label for="email" class="form__label">{{ 'contact.mail' | translate }}</label>
           </div>
         </div>
 
         <div class="form__row">
           <div class="form__group field">
             <textarea type="input" class="form__field form__textarea" placeholder="Message" name="message" id="message" required></textarea>
-            <label for="message" class="form__label">Message</label>
+            <label for="message" class="form__label">{{ 'contact.msg' | translate }}</label>
           </div>
         </div>
 

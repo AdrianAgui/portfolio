@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -7,5 +7,11 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent {
+  showScroller = false;
   faArrowUp = faArrowUp;
+
+  @HostListener('window:scroll', [''])
+  onScroll() {
+    this.showScroller = window.pageYOffset !== 0;
+  }
 }

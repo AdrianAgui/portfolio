@@ -12,8 +12,8 @@
 
 <app-footer></app-footer>
 
-<div class="arrow">
-  <a href="#">
+<a *ngIf="showScroller" href="#" class="link-top">
+  <div class="arrow">
     <fa-icon [icon]="faArrowUp"></fa-icon>
-  </a>
-</div>
+  </div>
+</a>

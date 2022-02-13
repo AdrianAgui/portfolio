@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -8,4 +9,6 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 })
 export class ContactComponent {
   faPaperPlane = faPaperPlane;
+  faGithub = faGithub;
+  faLinkedin = faLinkedin;
 }
