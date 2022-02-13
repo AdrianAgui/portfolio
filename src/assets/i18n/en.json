@@ -12,6 +12,9 @@
     "en": "English",
     "es": "Spanish"
   },
+  "home": {
+    "contact": "Contact me"
+  },
   "about": {
     "title": "About me",
     "whoami": {
@@ -29,6 +32,10 @@
   },
   "projects": {
     "title": "Projects",
+    "buttons": {
+      "visit": "Visit",
+      "code": "Code"
+    },
     "dummycoin": {
       "title": "Dummycoin",
       "info": "Project based on blockchain technology which simulates the architecture of Bitcoin, it is a fully functional network with features such as mining blocks, creating transactions and generating wallets, it consists of a frontend part and a backend part."
@@ -39,9 +46,30 @@
     }
   },
   "skills": {
-    "title": "Skills"
+    "title": "Skills",
+    "mastered": "Mastered",
+    "learn": "Learning",
+    "tooltip": {
+      "javascript": "Javascript",
+      "angular": "Angular 2+",
+      "typescript": "Typescript",
+      "html": "HTML5",
+      "css": "CSS3",
+      "sass": "SASS",
+      "git": "Git",
+      "scrum": "SCRUM",
+      "atlassian": "Jira, Bitbucket and Confluence",
+      "react": "ReactJS",
+      "nextjs": "NextJS",
+      "eth": "Solidity",
+      "blockchain": "Blockchain",
+      "node": "NodeJS"
+    }
   },
   "contact": {
     "title": "Get in touch!"
+  },
+  "footer": {
+    "text": "Developed by Adrián Aguirre"
   }
 }

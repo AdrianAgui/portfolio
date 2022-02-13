@@ -39,17 +39,6 @@
         .buttons {
           display: flex;
 
-          &__code {
-            @media (max-width: 1100px) {
-              display: flex;
-              width: 100%;
-              justify-content: center;
-              button {
-                font-size: 14px;
-              }
-            }
-          }
-
           &-justify-end {
             justify-content: flex-end;
           }
@@ -90,6 +79,17 @@
             &:hover {
               color: #2a2a2a;
               font-weight: 900;
+            }
+          }
+
+          &__code {
+            @media (max-width: 1100px) {
+              display: flex;
+              width: 100%;
+              justify-content: center;
+              button {
+                font-size: 14px;
+              }
             }
           }
         }

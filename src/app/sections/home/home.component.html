@@ -2,6 +2,17 @@
   <div class="content">
     <div class="col1">
       <app-title></app-title>
+
+      <div class="contact-container">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adrian.agui9@gmail.com" target="_blank">
+          <button class="contact-button">
+            <span>{{ 'home.contact' | translate }}</span>
+            <div class="icon">
+              <fa-icon class="icon-envelope" [icon]="faEnvelope"></fa-icon>
+            </div>
+          </button>
+        </a>
+      </div>
     </div>
 
     <div class="col2">
@@ -18,7 +29,7 @@
   <svg
     class="wave wave-home"
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 1440 320"
+    viewBox="0 224 1440 96"
   >
     <path
       fill="#ffffff"

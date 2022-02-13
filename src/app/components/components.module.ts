@@ -7,6 +7,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TranslateModule } from '@ngx-translate/core';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { NavBarMobileComponent } from './nav-bar-mobile/nav-bar-mobile.component';
+import { TooltipComponent } from './tooltip/tooltip.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NavBarMobileComponent } from './nav-bar-mobile/nav-bar-mobile.component
     DayNightToggleComponent,
     LangDropdownComponent,
     NavBarComponent,
-    NavBarMobileComponent
+    NavBarMobileComponent,
+    TooltipComponent
   ],
   imports: [CommonModule, FontAwesomeModule, TranslateModule],
   exports: [
@@ -22,7 +24,8 @@ import { NavBarMobileComponent } from './nav-bar-mobile/nav-bar-mobile.component
     DayNightToggleComponent,
     LangDropdownComponent,
     NavBarComponent,
-    NavBarMobileComponent
+    NavBarMobileComponent,
+    TooltipComponent
   ]
 })
 export class ComponentsModule {}

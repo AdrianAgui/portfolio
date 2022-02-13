@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Themes } from 'src/app/theme/symbols';
 import { ThemeService } from './../../theme/theme.service';
 
@@ -9,6 +10,7 @@ import { ThemeService } from './../../theme/theme.service';
 })
 export class HomeComponent implements OnInit {
   Themes = Themes;
+  faEnvelope = faEnvelope;
 
   currentTheme!: string;
 
