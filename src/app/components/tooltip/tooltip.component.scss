@@ -1,0 +1,27 @@
+.tooltip {
+  padding: 8px 16px;
+  color: var(--text-color);
+  background: var(--bg-color);
+  position: absolute;
+  border-radius: 5px;
+  text-align: center;
+  filter: drop-shadow(0 3px 5px #ccc);
+  line-height: 1.5;
+  bottom: 105px;
+  right: 100%;
+  margin-right: -110px;
+  font-size: 16px;
+  font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tooltip:after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  margin-left: -9px;
+  width: 18px;
+  height: 18px;
+  background: var(--bg-color);
+  transform: rotate(45deg);
+}
