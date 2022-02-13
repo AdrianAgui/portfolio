@@ -10,12 +10,15 @@
     justify-content: center;
 
     .card {
-      width: 400px;
-      height: 190px;
+      width: 600px;
       background: rgb(255, 255, 255);
       border-radius: 10px;
       transition: all 0.2s;
       box-shadow: rgb(255 255 255 / 10%) 0px 1px 1px 0px inset, rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px;
+
+      @media (max-width: 900px) {
+        width: 90%;
+      }
     }
 
     form {
@@ -23,7 +26,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 1rem;
+      padding: 3rem;
     }
   }
 }
