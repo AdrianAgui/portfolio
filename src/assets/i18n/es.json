@@ -67,7 +67,10 @@
     }
   },
   "contact": {
-    "title": "Contáctame!"
+    "title": "Contáctame!",
+    "name": "Nombre",
+    "mail": "Correo electrónico",
+    "msg": "Mensaje"
   },
   "footer": {
     "text": "Creado por Adrián Aguirre"
