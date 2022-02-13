@@ -13,7 +13,7 @@
   .socials-container {
     display: flex;
     justify-content: flex-end;
-    width: 85%;
+    width: 75%;
     margin-bottom: 1.5rem;
 
     @media (max-width: 900px) {
@@ -59,7 +59,7 @@
     justify-content: center;
 
     .card {
-      width: 75%;
+      width: 50%;
       background: rgb(255, 255, 255);
       border-radius: 10px;
       transition: all 0.2s;
