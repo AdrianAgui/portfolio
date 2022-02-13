@@ -1,6 +1,6 @@
 .contact {
   position: relative;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -10,7 +10,7 @@
     justify-content: center;
 
     .card {
-      width: 600px;
+      width: 75%;
       background: rgb(255, 255, 255);
       border-radius: 10px;
       transition: all 0.2s;
@@ -26,7 +26,115 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 3rem;
+      padding: 2rem;
+
+      .form__row {
+        width: 100%;
+        display: flex;
+
+        &:nth-child(2) {
+          margin-top: 2rem;
+        }
+
+        @media (max-width: 900px) {
+          flex-direction: column;
+        }
+      }
+
+      .form__group {
+        display: flex;
+        position: relative;
+        padding: 15px 0 0;
+        width: 100%;
+
+        @media (max-width: 900px) {
+          margin-top: 1.5rem;
+        }
+      }
+
+      .form__field {
+        font-family: inherit;
+        width: 80%;
+        border: 0;
+        border-bottom: 2px solid gray;
+        outline: 0;
+        font-size: 1.3rem;
+        padding: 7px 0;
+        background: transparent;
+        transition: border-color 0.2s;
+
+        &::placeholder {
+          color: transparent;
+        }
+
+        &:placeholder-shown ~ .form__label {
+          font-size: 1.3rem;
+          cursor: text;
+          top: 20px;
+        }
+      }
+
+      .form__textarea {
+        resize: none;
+        height: 5rem;
+      }
+
+      .form__label {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: 1rem;
+        color: gray;
+      }
+
+      .form__field:focus {
+        ~ .form__label {
+          position: absolute;
+          top: 0;
+          display: block;
+          transition: 0.2s;
+          font-size: 1rem;
+          color: #36383b;
+          font-weight: 700;
+        }
+
+        padding-bottom: 6px;
+        font-weight: 700;
+        border-width: 3px;
+        border-image: linear-gradient(to right, #36383b, #36383b);
+        border-image-slice: 1;
+      }
+
+      .form__field {
+        &:required,
+        &:invalid {
+          box-shadow: none;
+          margin-top: 4px;
+          font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+        }
+      }
+
+      button {
+        display: flex;
+        align-items: center;
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 17px;
+        padding: 0.8em 1.3em 0.8em 0.9em;
+        color: white;
+        font-weight: 600;
+        background: var(--primary-color);
+        border: none;
+        letter-spacing: 0.05em;
+        border-radius: 16px;
+        cursor: pointer;
+        margin-top: 3rem;
+      }
+
+      fa-icon {
+        margin-right: 1rem;
+      }
     }
   }
 }

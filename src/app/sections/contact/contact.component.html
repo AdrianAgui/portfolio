@@ -6,10 +6,29 @@
   <div class="contact-container">
     <div class="card">
       <form action="https://formsubmit.co/adrianagui9@gmail.com" method="POST">
-        <input type="text" name="name" required />
-        <input type="email" name="email" required />
-        <input type="text" name="body" required />
-        <button type="submit">Send</button>
+        <div class="form__row">
+          <div class="form__group field">
+            <input type="input" class="form__field" placeholder="Name" name="name" id="name" required />
+            <label for="name" class="form__label">Name</label>
+          </div>
+
+          <div class="form__group field">
+            <input type="input" class="form__field" placeholder="Email" name="email" id="email" required />
+            <label for="email" class="form__label">Email</label>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <div class="form__group field">
+            <textarea type="input" class="form__field form__textarea" placeholder="Message" name="message" id="message" required></textarea>
+            <label for="message" class="form__label">Message</label>
+          </div>
+        </div>
+
+        <button type="submit">
+          <fa-icon [icon]="faPaperPlane"></fa-icon>
+          <span>Send</span>
+        </button>
       </form>
     </div>
   </div>
