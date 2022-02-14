@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -8,7 +9,10 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 })
 export class MainComponent {
   showScroller = false;
+
   faArrowUp = faArrowUp;
+  faGithub = faGithub;
+  faLinkedin = faLinkedin;
 
   @HostListener('window:scroll', [''])
   onScroll() {
