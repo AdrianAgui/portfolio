@@ -1,8 +1,4 @@
 .stars {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
   position: fixed;
   bottom: 0;
   left: 0;
@@ -15,87 +11,22 @@
   }
 
   &-icon {
-    font-size: 56px;
-    color: #fffc00;
-    transition: 0.5s;
-  }
+    font-size: 32px;
+    color: #faf600;
+    }
 
   &-container {
-    .card {
-      width: 120px;
-      height: 30px;
-      margin: 0 auto;
-      background: var(--bg-color);
-      border-radius: 15px;
+    display: flex;
+    align-items: center;
 
-      .face {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &.face1 {
-          box-sizing: border-box;
-          margin-bottom: 35px;
-
-          h2 {
-            margin: 0;
-            padding: 0;
-          }
-
-          .content {
-            text-align: center;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            padding: 8px 8px 20px 8px;
-            border-radius: 15px 15px 0 0;
-          }
-        }
-
-        &.face2 {
-          cursor: pointer;
-          transition: 0.5s;
-
-          h2 {
-            margin: 0;
-            padding: 0;
-            color: #fff;
-            transition: 0.5s;
-            z-index: 10;
-            margin-right: 4px;
-          }
-
-          h2 {
-            font-size: 20px;
-          }
-
-          .stars-icon {
-            font-size: 14px;
-          }
-        }
-      }
-
-      &:hover .face.face2 {
-        height: 100px;
-
-        h2 {
-          font-size: 38px;
-        }
-
-        .stars-icon {
-          font-size: 28px;
-        }
-      }
+    &__text {
+      margin-right: 1rem;
     }
 
-    .card:nth-child(1) .face.face2 {
-      background-image: radial-gradient(circle, rgb(0, 0, 0) 25%, var(--primary-color) 100%);
-      border-radius: 15px;
+    &__num {
+      display: flex;
+      align-items: center;
     }
+
   }
 }
