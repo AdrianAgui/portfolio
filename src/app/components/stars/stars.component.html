@@ -1,15 +1,15 @@
-<div class="stars">
-  <div class="stars-container">
-
+<nav class="stars">
+  <ul>
+    <li class="stars-container" (click)="like()">
       <span class="stars-container__text" translate>stars.like</span>
 
-      <div class="stars-container__num" (click)="like()">
-        <h2><span id="totalLikes"></span></h2>
-        <span class="stars-icon"><fa-icon [icon]="faStar"></fa-icon></span>
+      <div class="stars-container__num">
+        <span id="totalLikes" class="star-likes"></span>
+        <span class="star-icon"><fa-icon [icon]="faStar"></fa-icon></span>
       </div>
-
-  </div>
-</div>
+    </li>
+  </ul>
+</nav>
 
 <ng-container *ngIf="showConfetti">
   <canvas id="stars"></canvas>
