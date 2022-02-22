@@ -2,6 +2,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { firebaseConfig } from './services/firebase.config';
+
 import { AppComponent } from './app.component';
 
 import { darkTheme, lightTheme } from './theme/theme';
@@ -35,8 +39,10 @@ function createTranslateLoader(http: HttpClient) {
     }),
     ThemeModule.forRoot({
       themes: [lightTheme, darkTheme],
-      active: Themes.DARK
+      active: Themes.LIGHT
     }),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
     PagesModule
   ],
   exports: [],

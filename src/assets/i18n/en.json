@@ -15,6 +15,9 @@
   "home": {
     "contact": "Contact me"
   },
+  "stars": {
+    "like": "Do you like my website?"
+  },
   "about": {
     "title": "About me",
     "whoami": {
