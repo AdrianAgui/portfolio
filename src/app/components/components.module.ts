@@ -9,6 +9,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { NavBarMobileComponent } from './nav-bar-mobile/nav-bar-mobile.component';
 import { TooltipComponent } from './tooltip/tooltip.component';
 import { StarsComponent } from './stars/stars.component';
+import { SocialsComponent } from './socials/socials.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +19,19 @@ import { StarsComponent } from './stars/stars.component';
     NavBarComponent,
     NavBarMobileComponent,
     TooltipComponent,
-    StarsComponent
+    StarsComponent,
+    SocialsComponent
   ],
   imports: [CommonModule, FontAwesomeModule, TranslateModule],
-  exports: [TitleComponent, DayNightToggleComponent, LangDropdownComponent, NavBarComponent, NavBarMobileComponent, TooltipComponent, StarsComponent]
+  exports: [
+    TitleComponent,
+    DayNightToggleComponent,
+    LangDropdownComponent,
+    NavBarComponent,
+    NavBarMobileComponent,
+    TooltipComponent,
+    StarsComponent,
+    SocialsComponent
+  ]
 })
 export class ComponentsModule {}
