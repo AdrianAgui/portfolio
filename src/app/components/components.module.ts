@@ -8,6 +8,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { NavBarMobileComponent } from './nav-bar-mobile/nav-bar-mobile.component';
 import { TooltipComponent } from './tooltip/tooltip.component';
+import { StarsComponent } from './stars/stars.component';
 
 @NgModule({
   declarations: [
@@ -16,16 +17,10 @@ import { TooltipComponent } from './tooltip/tooltip.component';
     LangDropdownComponent,
     NavBarComponent,
     NavBarMobileComponent,
-    TooltipComponent
+    TooltipComponent,
+    StarsComponent
   ],
   imports: [CommonModule, FontAwesomeModule, TranslateModule],
-  exports: [
-    TitleComponent,
-    DayNightToggleComponent,
-    LangDropdownComponent,
-    NavBarComponent,
-    NavBarMobileComponent,
-    TooltipComponent
-  ]
+  exports: [TitleComponent, DayNightToggleComponent, LangDropdownComponent, NavBarComponent, NavBarMobileComponent, TooltipComponent, StarsComponent]
 })
 export class ComponentsModule {}

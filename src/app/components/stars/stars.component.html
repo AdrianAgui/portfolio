@@ -1,0 +1,19 @@
+<div class="stars">
+  <div class="stars-container">
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <span translate>stars.like</span>
+        </div>
+      </div>
+      <div class="face face2" (click)="like()">
+        <h2><span id="totalLikes"></span></h2>
+        <span class="stars-icon"><fa-icon [icon]="faStar"></fa-icon></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-container *ngIf="showConfetti">
+  <canvas id="stars"></canvas>
+</ng-container>
