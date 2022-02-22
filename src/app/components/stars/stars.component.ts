@@ -35,15 +35,20 @@ export class StarsComponent implements OnInit {
       subscription.unsubscribe();
 
       const totalStars = starsResponse.map((s) => s.starred).length;
+      const counter = document.getElementById('totalLikes-container') as HTMLElement;
+
+      counter.classList.remove('animate__animated', 'animate__rubberBand');
 
       if (!starsResponse.some((star: any) => star.id === this.session.getUniqueId())) {
         this.session.addStar().then(() => {
+          counter.classList.add('animate__animated', 'animate__rubberBand');
           if (this.likeCounts) this.likeCounts.update(totalStars + 1);
           this.fireConfetti();
         });
       } else {
         this.session.removeStar().subscribe(() => {
           if (this.likeCounts) this.likeCounts.update(totalStars - 1);
+          counter.classList.add('animate__animated', 'animate__rubberBand');
         });
       }
     });
