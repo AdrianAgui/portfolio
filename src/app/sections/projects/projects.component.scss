@@ -21,6 +21,8 @@
       }
 
       .block-img {
+        display: flex;
+
         position: relative;
         width: 50%;
 
@@ -29,6 +31,28 @@
         @media (max-width: 1100px) {
           width: 100%;
           margin-bottom: 3rem;
+        }
+
+        .badges {
+          display: flex;
+          flex-direction: column;
+
+          &-right {
+            margin-right: 0.5rem;
+          }
+
+          &-left {
+            margin-left: 0.5rem;
+          }
+
+          img {
+            width: 25px;
+            margin-bottom: 0.5rem;
+          }
+
+          @media (max-width: 1100px) {
+            display: none;
+          }
         }
 
         img {
@@ -77,7 +101,7 @@
             }
 
             &:hover {
-              color: #2a2a2a;
+              color: var(--text-color);
               font-weight: 900;
             }
           }
@@ -103,8 +127,7 @@
         }
 
         &__title {
-          font-family: 'Supermercado One', 'Franklin Gothic Medium',
-            'Arial Narrow', Arial, sans-serif;
+          font-family: 'Supermercado One', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
           font-size: 32px;
         }
 
@@ -129,11 +152,15 @@
           margin: 0;
         }
       }
+    }
 
-      &-reverse {
-        @media (max-width: 1100px) {
-          flex-direction: column-reverse;
-        }
+    .row-reverse {
+      flex-direction: row-reverse;
+    }
+
+    .col-reverse {
+      @media (max-width: 1100px) {
+        flex-direction: column-reverse;
       }
     }
 
