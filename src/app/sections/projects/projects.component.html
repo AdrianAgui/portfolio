@@ -5,32 +5,40 @@
 
   <div class="projects-grid">
     <div class="container">
-      <div class="block-img">
-        <a href="https://dummycoin.vercel.app" target="_blank">
-          <img loading="lazy" src="assets/img/dummycoin.png" />
-        </a>
-        <div class="buttons">
-          <a *ngIf="!isMobile" href="https://dummycoin.vercel.app" target="_blank">
-            <button>
-              <span>{{ 'projects.buttons.visit' | translate }}</span
-              >&nbsp;
-              <fa-icon [icon]="faLink"></fa-icon>
-            </button>
+      <div class="block-img row-reverse">
+        <div class="badges badges-left">
+          <img src="assets/icons/angular.png" loading="lazy" alt="A" title="Angular" />
+          <img src="assets/icons/typescript.png" loading="lazy" alt="TS" title="Typescript" />
+          <img src="assets/icons/blockchain.png" loading="lazy" alt="BTC" title="Blockchain" />
+          <img src="assets/icons/node.png" loading="lazy" alt="node" title="NodeJS" />
+        </div>
+        <div>
+          <a href="https://dummycoin.vercel.app" target="_blank">
+            <img loading="lazy" src="assets/img/dummycoin.png" />
           </a>
+          <div class="buttons">
+            <a *ngIf="!isMobile" href="https://dummycoin.vercel.app" target="_blank">
+              <button>
+                <span>{{ 'projects.buttons.visit' | translate }}</span
+                >&nbsp;
+                <fa-icon [icon]="faLink"></fa-icon>
+              </button>
+            </a>
 
-          <div class="buttons__code">
-            <a href="https://github.com/AdrianAgui/dummycoin-frontend" target="_blank">
-              <button>
-                <span>Frontend</span>&nbsp;
-                <fa-icon [icon]="faCode"></fa-icon>
-              </button>
-            </a>
-            <a href="https://github.com/AdrianAgui/dummycoin-backend" target="_blank">
-              <button>
-                <span>Backend</span>&nbsp;
-                <fa-icon [icon]="faCode"></fa-icon>
-              </button>
-            </a>
+            <div class="buttons__code">
+              <a href="https://github.com/AdrianAgui/dummycoin-frontend" target="_blank">
+                <button>
+                  <span>Frontend</span>&nbsp;
+                  <fa-icon [icon]="faCode"></fa-icon>
+                </button>
+              </a>
+              <a href="https://github.com/AdrianAgui/dummycoin-backend" target="_blank">
+                <button>
+                  <span>Backend</span>&nbsp;
+                  <fa-icon [icon]="faCode"></fa-icon>
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -47,36 +55,44 @@
 
     <hr />
 
-    <div class="container container-reverse">
+    <div class="container col-reverse">
       <div class="info info-margin info-margin-right">
         <div class="info__title">
-          {{ 'projects.postsboard.title' | translate }}
+          {{ 'projects.wallapop.title' | translate }}
         </div>
         <p class="info__text">
-          {{ 'projects.postsboard.info' | translate }}
+          {{ 'projects.wallapop.info' | translate }}
         </p>
       </div>
 
       <div class="block-img">
-        <a href="https://adrianagui.github.io/posts-board" target="_blank">
-          <img loading="lazy" src="assets/img/posts-board.png" />
-        </a>
-        <div class="buttons buttons-justify-end">
-          <a *ngIf="!isMobile" href="https://adrianagui.github.io/posts-board" target="_blank">
-            <button>
-              <span>{{ 'projects.buttons.visit' | translate }}</span
-              >&nbsp;
-              <fa-icon [icon]="faLink"></fa-icon>
-            </button>
+        <div class="badges badges-right">
+          <img src="assets/icons/angular.png" loading="lazy" alt="A" title="Angular" />
+          <img src="assets/icons/typescript.png" loading="lazy" alt="TS" title="Typescript" />
+          <img src="assets/icons/sass.png" loading="lazy" alt="sass" title="Sass" />
+          <img src="assets/icons/html.png" loading="lazy" alt="html" title="HTML5" />
+        </div>
+        <div>
+          <a href="https://wallapop-frontend-test.vercel.app/home" target="_blank">
+            <img loading="lazy" src="assets/img/wallapop.png" />
           </a>
-          <div class="buttons__code">
-            <a href="https://github.com/AdrianAgui/posts-board" target="_blank">
+          <div class="buttons buttons-justify-end">
+            <a *ngIf="!isMobile" href="https://wallapop-frontend-test.vercel.app/home" target="_blank">
               <button>
-                <span>{{ 'projects.buttons.code' | translate }}</span
+                <span>{{ 'projects.buttons.visit' | translate }}</span
                 >&nbsp;
-                <fa-icon [icon]="faCode"></fa-icon>
+                <fa-icon [icon]="faLink"></fa-icon>
               </button>
             </a>
+            <div class="buttons__code">
+              <a href="https://wallapop-frontend-test.vercel.app/home" target="_blank">
+                <button>
+                  <span>{{ 'projects.buttons.code' | translate }}</span
+                  >&nbsp;
+                  <fa-icon [icon]="faCode"></fa-icon>
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
