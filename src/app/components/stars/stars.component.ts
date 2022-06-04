@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { SessionService } from './../../services/session.service';
+import { CountUp } from 'countup.js';
 
 import 'animate.css';
-import { CountUp } from 'countup.js';
 
 declare const window: any;
 
