@@ -71,7 +71,8 @@
       "eth": "Solidity",
       "blockchain": "Blockchain",
       "node": "NodeJS",
-      "tailwind": "TailwindCSS"
+      "tailwind": "TailwindCSS",
+      "vite": "Vite"
     }
   },
   "contact": {
