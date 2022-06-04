@@ -1,20 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-import { faLink, faCode } from '@fortawesome/free-solid-svg-icons';
+import { Component, ViewEncapsulation } from '@angular/core';
+import { Project } from './project.interface';
+import { projects } from './projects';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+  styleUrls: ['./projects.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
-export class ProjectsComponent implements OnInit {
-  faLink = faLink;
-  faCode = faCode;
+export class ProjectsComponent {
+  projects: Project[] = [];
 
-  isMobile = false;
-
-  ngOnInit(): void {
-    if (window.matchMedia('(max-width: 900px)').matches) {
-      this.isMobile = true;
-    }
+  constructor() {
+    this.projects = projects;
   }
 }

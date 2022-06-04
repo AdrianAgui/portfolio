@@ -46,6 +46,10 @@
     "wallapop": {
       "title": "Wallapop",
       "info": "Frontend and responsive project based on Wallapop style, it implements functionalities such as: list of products, favorites, search engine, sorting and infinite scroll."
+    },
+    "pokegen": {
+      "title": "Pokegen",
+      "info": "Frontend and responsive project based on the Pokemon theme, we can capture, train and create our own Pokemon team. Login via github or google, interactive Pokedex and grid of all the pokemons with their information page for each one."
     }
   },
   "skills": {
@@ -66,7 +70,8 @@
       "nextjs": "NextJS",
       "eth": "Solidity",
       "blockchain": "Blockchain",
-      "node": "NodeJS"
+      "node": "NodeJS",
+      "tailwind": "TailwindCSS"
     }
   },
   "contact": {
