@@ -4,57 +4,12 @@
   <div class="section-title">{{ 'projects.title' | translate }}</div>
 
   <div class="projects-grid">
-    <div class="container">
-      <div class="block-img row-reverse">
-        <div class="badges badges-left">
-          <img src="assets/icons/angular.png" loading="lazy" alt="A" title="Angular" />
-          <img src="assets/icons/typescript.png" loading="lazy" alt="TS" title="Typescript" />
-          <img src="assets/icons/blockchain.png" loading="lazy" alt="BTC" title="Blockchain" />
-          <img src="assets/icons/node.png" loading="lazy" alt="node" title="NodeJS" />
-        </div>
-        <div>
-          <a href="https://dummycoin.vercel.app" target="_blank">
-            <img loading="lazy" src="assets/img/dummycoin.png" />
-          </a>
-          <div class="buttons">
-            <a *ngIf="!isMobile" href="https://dummycoin.vercel.app" target="_blank">
-              <button>
-                <span>{{ 'projects.buttons.visit' | translate }}</span
-                >&nbsp;
-                <fa-icon [icon]="faLink"></fa-icon>
-              </button>
-            </a>
+    <ng-container *ngFor="let project of projects">
+      <app-project [project]="project"></app-project>
+      <hr />
+    </ng-container>
 
-            <div class="buttons__code">
-              <a href="https://github.com/AdrianAgui/dummycoin-frontend" target="_blank">
-                <button>
-                  <span>Frontend</span>&nbsp;
-                  <fa-icon [icon]="faCode"></fa-icon>
-                </button>
-              </a>
-              <a href="https://github.com/AdrianAgui/dummycoin-backend" target="_blank">
-                <button>
-                  <span>Backend</span>&nbsp;
-                  <fa-icon [icon]="faCode"></fa-icon>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="info info-margin info-margin-left">
-        <div class="info__title">
-          {{ 'projects.dummycoin.title' | translate }}
-        </div>
-        <p class="info__text">
-          {{ 'projects.dummycoin.info' | translate }}
-        </p>
-      </div>
-    </div>
-
-    <hr />
-
+    <!--  REVERSED PROJECT
     <div class="container col-reverse">
       <div class="info info-margin info-margin-right">
         <div class="info__title">
@@ -96,9 +51,7 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <hr />
+    </div> -->
 
     <div class="container">
       <h2>Dev in progress... 👨‍💻</h2>

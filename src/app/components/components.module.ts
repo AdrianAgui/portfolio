@@ -10,6 +10,7 @@ import { NavBarMobileComponent } from './nav-bar-mobile/nav-bar-mobile.component
 import { TooltipComponent } from './tooltip/tooltip.component';
 import { StarsComponent } from './stars/stars.component';
 import { SocialsComponent } from './socials/socials.component';
+import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SocialsComponent } from './socials/socials.component';
     NavBarMobileComponent,
     TooltipComponent,
     StarsComponent,
-    SocialsComponent
+    SocialsComponent,
+    ProjectComponent
   ],
   imports: [CommonModule, FontAwesomeModule, TranslateModule],
   exports: [
@@ -31,7 +33,8 @@ import { SocialsComponent } from './socials/socials.component';
     NavBarMobileComponent,
     TooltipComponent,
     StarsComponent,
-    SocialsComponent
+    SocialsComponent,
+    ProjectComponent
   ]
 })
 export class ComponentsModule {}

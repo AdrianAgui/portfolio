@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="block-img row-reverse">
+    <div class="badges badges-left">
+      <ng-container *ngFor="let tech of project.techs">
+        <img [src]="tech.img" loading="lazy" [alt]="tech.alt" [title]="tech.title" />
+      </ng-container>
+    </div>
+
+    <div>
+      <a [href]="project.url" target="_blank">
+        <img class="project-image" loading="lazy" [src]="project.image" />
+      </a>
+      <div class="buttons">
+        <a *ngIf="!isMobile" [href]="project.url" target="_blank">
+          <button>
+            <span>{{ 'projects.buttons.visit' | translate }}</span
+            >&nbsp;
+            <fa-icon [icon]="faLink"></fa-icon>
+          </button>
+        </a>
+
+        <div class="buttons__code">
+          <ng-container *ngIf="project.repositories?.frontend">
+            <a [href]="project.repositories?.frontend" target="_blank">
+              <button>
+                <span>Frontend</span>&nbsp;
+                <fa-icon [icon]="faCode"></fa-icon>
+              </button>
+            </a>
+          </ng-container>
+
+          <ng-container *ngIf="project.repositories?.backend">
+            <a [href]="project.repositories?.backend" target="_blank">
+              <button>
+                <span>Backend</span>&nbsp;
+                <fa-icon [icon]="faCode"></fa-icon>
+              </button>
+            </a>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info info-margin info-margin-left">
+    <div class="info__title">
+      {{ project.nameLabel | translate }}
+    </div>
+    <p class="info__text">
+      {{ project.descriptionLabel | translate }}
+    </p>
+  </div>
+</div>

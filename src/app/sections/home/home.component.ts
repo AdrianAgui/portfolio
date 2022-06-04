@@ -18,8 +18,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.currentTheme = this.themeService.getActiveTheme().name;
-    this.themeService.themeChange.subscribe(
-      (theme) => (this.currentTheme = theme.name)
-    );
+    this.themeService.themeChange.subscribe((theme) => (this.currentTheme = theme.name));
   }
 }
