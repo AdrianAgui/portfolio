@@ -60,6 +60,13 @@
         justify-content: flex-end;
       }
 
+      &__visit {
+        display: block;
+        @media (max-width: 900px) {
+          display: none;
+        }
+      }
+
       button {
         margin: 1rem 1rem 0 0;
         padding: 0.5em 1.5em;

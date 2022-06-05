@@ -11,7 +11,7 @@
         <img class="project-image" loading="lazy" [src]="project.image" />
       </a>
       <div class="buttons">
-        <a *ngIf="!isMobile" [href]="project.url" target="_blank">
+        <a class="buttons__visit" [href]="project.url" target="_blank">
           <button>
             <span>{{ 'projects.buttons.visit' | translate }}</span
             >&nbsp;
