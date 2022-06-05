@@ -13,12 +13,4 @@ export class ProjectComponent {
 
   faLink = faLink;
   faCode = faCode;
-
-  isMobile = false;
-
-  ngOnInit(): void {
-    if (window.matchMedia('(max-width: 900px)').matches) {
-      this.isMobile = true;
-    }
-  }
 }

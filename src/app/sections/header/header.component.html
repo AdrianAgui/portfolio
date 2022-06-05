@@ -3,18 +3,16 @@
     <a href="#"><span>Æ</span></a>
   </div>
 
-  <ng-container *ngIf="isMobile; else isDesktop">
+  <div class="navbar-mobile">
     <app-nav-bar-mobile></app-nav-bar-mobile>
-  </ng-container>
+  </div>
 
-  <ng-template #isDesktop>
-    <div class="menu">
-      <app-nav-bar></app-nav-bar>
-    </div>
+  <div class="menu">
+    <app-nav-bar></app-nav-bar>
+  </div>
 
-    <div class="options">
-      <app-lang-dropdown></app-lang-dropdown>
-      <app-day-night-toggle> </app-day-night-toggle>
-    </div>
-  </ng-template>
+  <div class="options">
+    <app-lang-dropdown></app-lang-dropdown>
+    <app-day-night-toggle> </app-day-night-toggle>
+  </div>
 </header>

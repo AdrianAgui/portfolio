@@ -39,7 +39,7 @@
 
       &-inner {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 5rem;
 
         padding: 2rem;
@@ -48,7 +48,12 @@
         border-radius: 20px;
         transition: all 0.2s;
 
-        @media (max-width: 900px) {
+        @media (max-width: 1400px) {
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 3rem;
+        }
+
+        @media (max-width: 1050px) {
           grid-template-columns: 1fr 1fr;
           gap: 3rem;
         }
