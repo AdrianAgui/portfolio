@@ -72,7 +72,8 @@
       "blockchain": "Blockchain",
       "node": "NodeJS",
       "tailwind": "TailwindCSS",
-      "vite": "Vite"
+      "vite": "Vite",
+      "reactnative": "React Native"
     }
   },
   "contact": {
