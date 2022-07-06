@@ -1,4 +1,4 @@
-<div class="container">
+<div #container class="container" [ngClass]="{ 'animate__animated animate__lightSpeedInRight': animateProject }">
   <div class="block-img row-reverse">
     <div class="badges badges-left">
       <ng-container *ngFor="let tech of project.techs">
