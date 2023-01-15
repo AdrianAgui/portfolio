@@ -16,15 +16,15 @@
     "lint:fix": "eslint src/**/*.{js,ts} --fix"
   },
   "dependencies": {
-    "@angular/animations": "~13.1.0",
-    "@angular/common": "~13.1.0",
-    "@angular/compiler": "~13.1.0",
-    "@angular/core": "~13.1.0",
-    "@angular/fire": "^7.2.1",
-    "@angular/forms": "~13.1.0",
-    "@angular/platform-browser": "~13.1.0",
-    "@angular/platform-browser-dynamic": "~13.1.0",
-    "@angular/router": "~13.1.0",
+    "@angular/animations": "^14.2.12",
+    "@angular/common": "^14.2.12",
+    "@angular/compiler": "^14.2.12",
+    "@angular/core": "^14.2.12",
+    "@angular/fire": "7.4.1",
+    "@angular/forms": "^14.2.12",
+    "@angular/platform-browser": "^14.2.12",
+    "@angular/platform-browser-dynamic": "^14.2.12",
+    "@angular/router": "^14.2.12",
     "@fingerprintjs/fingerprintjs": "^3.3.2",
     "@fortawesome/angular-fontawesome": "^0.10.1",
     "@fortawesome/fontawesome-svg-core": "~1.2.36",
@@ -32,18 +32,17 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
-    "animate.css": "^4.1.1",
     "canvas-confetti": "^1.5.1",
     "countup.js": "^2.0.8",
-    "firebase": "^9.6.6",
+    "firebase": "9.15.0",
     "rxjs": "~7.4.0",
-    "tslib": "^2.3.1",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~13.1.2",
-    "@angular/cli": "~13.1.2",
-    "@angular/compiler-cli": "~13.1.0",
+    "@angular-devkit/build-angular": "^14.2.10",
+    "@angular/cli": "^14.2.10",
+    "@angular/compiler-cli": "^14.2.12",
+    "@types/countup.js": "^2.0.4",
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "^5.8.1",
     "eslint": "^8.6.0",
@@ -52,6 +51,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.5.1",
     "prettier-eslint": "^13.0.0",
-    "typescript": "~4.5.2"
+    "tslib": "^2.4.1",
+    "typescript": "^4.7.4"
   }
 }
