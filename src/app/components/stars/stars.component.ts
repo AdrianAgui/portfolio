@@ -3,8 +3,6 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { CountUp } from 'countup.js';
 import { SessionService } from './../../services/session.service';
 
-import 'animate.css';
-
 declare const window: any;
 
 @Component({
