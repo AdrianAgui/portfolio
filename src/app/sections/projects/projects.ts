@@ -2,7 +2,25 @@ import { Project } from './project.interface';
 
 export const projects: Project[] = [
   {
-    id: 1,
+    id: 4,
+    nameLabel: 'projects.gamerburst.title',
+    descriptionLabel: 'projects.gamerburst.info',
+    url: 'https://gamer-burst.vercel.app/',
+    image: 'assets/img/gamerburst.png',
+    techs: [
+      { title: 'React', img: 'assets/icons/react.png', alt: 'React' },
+      { title: 'Typescript', img: 'assets/icons/typescript.png', alt: 'Typescript' },
+      { title: 'Vite', img: 'assets/icons/vite.png', alt: 'Vite' },
+      { title: 'Material UI', img: 'assets/icons/mui.png', alt: 'MUI' },
+      { title: 'TailwindCSS', img: 'assets/icons/tailwind.png', alt: 'TailwindCSS' }
+    ],
+    repositories: {
+      frontend: 'https://github.com/AdrianAgui/gamer-burst'
+    },
+    reverse: true
+  },
+  {
+    id: 3,
     nameLabel: 'projects.pokegen.title',
     descriptionLabel: 'projects.pokegen.info',
     url: 'https://pokegen.vercel.app',
@@ -35,7 +53,7 @@ export const projects: Project[] = [
     reverse: true
   },
   {
-    id: 3,
+    id: 1,
     nameLabel: 'projects.dummycoin.title',
     descriptionLabel: 'projects.dummycoin.info',
     url: 'https://dummycoin.vercel.app',
