@@ -50,6 +50,10 @@
     "pokegen": {
       "title": "Pokegen",
       "info": "Frontend and responsive project based on the Pokemon theme, we can capture, train and create our own Pokemon team. Login via github or google, interactive Pokedex and grid of all the pokemons with their information page for each one."
+    },
+    "gamerburst": {
+      "title": "Gamer burst",
+      "info": "Frontend and responsive project, simulation of an Ecommerce oriented to video games, we can add products to the cart, see a list of video games and the detail of each of them."
     }
   },
   "skills": {
