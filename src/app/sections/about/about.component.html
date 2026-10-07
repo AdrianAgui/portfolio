@@ -6,7 +6,7 @@
   <div class="content">
     <article class="content__whoiam">
       <div class="subtitle">{{ 'about.whoami.title' | translate }}</div>
-      <div class="text" [innerHTML]="'about.whoami.text' | translate"></div>
+      <div class="text" [innerHTML]="'about.whoami.text' | translate: { age: age }"></div>
       <img
         loading="lazy"
         src="assets/img/whoami.png"

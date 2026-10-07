@@ -22,7 +22,7 @@
     "title": "About me",
     "whoami": {
       "title": "Who am I?",
-      "text": "Hello! My name is Adrián, but you can call me Adri, I was born in 1992 and I am passionate about technology, video games and investigate deeply the topics that interest me.<br><br>I consider myself a very curious person who enjoys continuous learning and always likes to be updated on new technologies, especially in the world of web development."
+      "text": "Hello! My name is Adrián, but you can call me Adri, I am {{age}} years old and I am passionate about technology, video games and investigate deeply the topics that interest me.<br><br>I consider myself a very curious person who enjoys continuous learning and always likes to be updated on new technologies, especially in the world of web development."
     },
     "work": {
       "title": "Work Experience",
